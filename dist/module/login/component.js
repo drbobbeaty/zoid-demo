@@ -3,6 +3,7 @@
 
 import { create } from 'zoid/src';
 
+
 export var LoginZoidComponent = create({
 
     tag: 'login-component',

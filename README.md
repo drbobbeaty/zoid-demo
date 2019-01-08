@@ -21,8 +21,10 @@ Quick Start
 
 #### Getting Started
 
+- Install `npm` from Homebrew: `brew install npm`
 - Fork the module
-- Install: `npm install`
+- Install the `serve` component: `npm install -D serve`
+- Install everything else: `npm install`
 - Start editing code in `./src` and writing tests in `./tests`
 - Build: `npm run build`
 

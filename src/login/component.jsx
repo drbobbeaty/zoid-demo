@@ -21,12 +21,10 @@ export let LoginZoidComponent = create({
     },
 
     props: {
-
         prefilledEmail: {
             type:     'string',
             required: true
         },
-
         onLogin: {
             type:     'function',
             required: true
@@ -76,7 +74,6 @@ export let LoginZoidComponent = create({
                             border-top-color: rgba(33, 128, 192, 0.8);
                             border-radius: 100%;
                             animation: rotation .7s infinite linear;
-
                         }
 
                         @keyframes rotation {

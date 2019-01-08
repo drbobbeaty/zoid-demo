@@ -43,6 +43,9 @@ jspm_packages
 # Output of 'npm pack'
 *.tgz
 
+# Specifics on the package.json file
+package-lock.json
+
 # Yarn Integrity file
 .yarn-integrity
 
