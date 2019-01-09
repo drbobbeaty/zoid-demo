@@ -12,6 +12,12 @@ A forkable demo repo for [zoid](https://github.com/krakenjs/zoid) to help you ge
 ### Useful starting points
 
 - [Component definition](./src/login/component.jsx)
+- [Component implementation - iframe mode](./demo/iframe/login.htm) - this will
+  need to be exposed on the service so that it can be loaded by the users.
+  This is covered in [Deploying](#Deploying), below.
+- [Component implementation - popup mode](./demo/popup/login.htm) - this will
+  need to be exposed on the service so that it can be loaded by the users.
+  This is covered in [Deploying](#Deploying), below.
 - [Demo in iframe mode](./demo/iframe/index.htm)
 - [Demo in popup mode](./demo/popup/index.htm)
 - [Component test](./test/tests/login.js)
@@ -48,11 +54,13 @@ npm run demo
 
 #### Deploying
 
-- Host your bundled xcomponent script somewhere, e.g. `https://mysite.com/login.xcomponent.js`
+- Host your bundled xcomponent script somewhere, e.g. `https://mysite.com/login-zoid-component.frame.js` or `https://mysite.com/login-zoid-component.popup.js`
 - Set up a public url for your component, e.g. `https://mysite.com/login`
-- Make sure the `login.xcomponent.js` is included in the login page, and using `window.xprops`
+- Make sure the `login-zoid-component.frame.js` is included in the login page,
+  and using `window.xprops` to obtain the data from the user.
 
-Now other sites can include `https://mysite.com/login.xcomponent.js` on their pages, and render your component!
+Now other sites can include `https://mysite.com/login-zoid-component.frame.js`
+and `https://mysite.com/login-zoid-component.popup.js` on their pages, and render your component!
 
 #### Tests
 
