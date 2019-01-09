@@ -93,7 +93,13 @@ npm run karma -- --keep-open
 
 - Remove the example code in `./src`, `./test/tests` and `./demo`
 - Edit the module name in `package.json`
-- Edit `README.md` and `CONTRIBUTING.md`
+- Edit `README.md`, `CHANGELOG.md`, and `CONTRIBUTING.md`
+  - The command: `npm run version:major` will update the `version` in the
+    `package.json` by bumping up the major version number. It will also
+    append a new template for this new version at the top of the `CHANGELOG.md`
+    file so that you can easily write the change log prior to the release.
+  - The command: `npm run version:minor` will do the same for the minor version
+    number, and `npm run version:patch` does the same for the patch number.
 
 ##### Then:
 

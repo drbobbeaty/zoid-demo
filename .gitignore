@@ -53,5 +53,7 @@ package-lock.json
 flow-typed
 
 .idea
+*.swp
+*.swo
 
 .DS_Store
