@@ -26,6 +26,12 @@ Quick Start
 - Install the `serve` component: `npm install -D serve`
 - Install everything else: `npm install`
 - Start editing code in `./src` and writing tests in `./tests`
+- Update the `package.json` file with values for the new project:
+  - Update the `name`, `version`, `description` values
+  - Update the `repository.url` value for the new repo
+- Update the `webpack.config.js` file with the values for the project:
+  - Update the `FILE_NAME` for generated file name.
+  - Update the `MODULE_NAME` for the module to place this zoid
 - Build: `npm run build`
 
 #### Building
